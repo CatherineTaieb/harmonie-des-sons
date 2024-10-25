@@ -1,0 +1,209 @@
+/* CSS CONCERNANT LA TOTALITE DE LA PAGE (BODY, LIENS, ETC...) */
+
+
+/* BODY */
+body{
+    background-color: #fff9e6;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+/* LIENS */
+a:link,
+a:visited,
+a:active {
+text-decoration: none;
+color: black;
+}
+
+/* REDUCTION DU BOUTON LORSUQU'ON CLIQUE DESSUS */
+.bouton:active {
+    transform: scale(0.95);
+    }
+
+
+
+
+
+    /* HEADER INCLUANT LA NAV EN STICKY */
+
+header{
+    position: sticky;
+    background-color: #E0A458;
+    top: 0px;
+    padding: 20px;
+    font-size: 1.2rem;
+    border-bottom: ridge #E0A458 ;
+}
+
+header ul{
+    padding: 0;
+    margin:0;
+}
+
+
+header li{
+    display: inline;
+    padding:5%;
+}
+
+
+
+
+
+/* VIDEO DE BIENVENUE */
+
+
+.multimediatop video{
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+
+
+
+/* SECTION BIENVENUE */
+
+
+.bienvenue h1{
+    font-size: 2.5rem;
+
+
+}
+
+.bienvenue{
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    background: radial-gradient(circle, rgba(255,249,230,1) 0%, rgba(254,210,154,1) 100%); 
+    border-radius: 10px 50px 0px 90px;
+    border:solid 2px #E0A458;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+/* PROGRAMME */
+
+.programme{
+    scroll-margin-top: 80px;
+    margin-top: 60px;
+    padding-top: 10px;
+
+}
+
+.titreProgramme{
+    font-size: 1.5rem;
+}
+
+
+/* IMAGES ET INFORMATIONS DU PROGRAMME */
+.concert{
+    display: inline-block;
+    border-radius: 10px 50px 0px 90px;
+    border:solid 2px #E0A458;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s;
+    background-color: #fff9e6;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+.programme img{
+
+    height: 150px;
+    width: auto;
+    padding: 5%;
+
+}
+
+.concert p{
+    padding: 10px;
+    border-top: ridge 2px #E0A458;
+}
+
+
+.concert:hover{
+    transform: scale(1.5);
+}
+
+
+.programme .bouton {
+    background-color: #E0A458;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.5);
+  }
+
+
+
+
+/* CONTACTS : COORDONNES ET HORAIRES  */
+
+
+.adresse, .horaires {
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    box-sizing: border-box;
+    margin: 50px;
+    vertical-align: top;
+    font-size: 1.2rem;
+    background-color: #FEFADC;
+    border-radius: 10px 50px 0px 90px;
+    padding: 30px%;
+    border: #E0A458 solid 2px;
+  }
+
+
+.infosPratiques h2{
+    font-size: 2.5rem;
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: dotted;
+    border-color: #E0A458;
+}
+
+
+.adresse h4{
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+
+.adresse p{
+    margin-top: 0px;
+}
+
+
+  
+  
+
+/* HORAIRES (TABLEAU) */
+
+.titlehoraire{
+    padding-bottom: 25px;
+    font-size: 2.3rem;
+}
+
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #E0A458;
+    padding: 15px;
+}
+
+
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- 
@@ -71,15 +72,10 @@ CONDITIONS :
 <header>
     <nav>
         <ul>
-            <li>Acceuil</li>
-            <li>Programme</li>
-            <li>Infos Pratiques 
-                <ul>
-                    <li>Accès et Horaires</li>
-                    <li>Tarifs</li>
-                    <li>Accessibilité</li>
-                </ul>
-            <li>Galerie</li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#programme">Programme</a></li>
+            <li><a href="#infosPratiques">Infos Pratiques</a></li>
+            <li><a href="#galerie">Galerie</a></li>
         </ul>
     </nav>
 </header>
@@ -87,10 +83,12 @@ CONDITIONS :
 <main>
 
 
-<section class="XXXXX">
-    
-    <img src="images/bienvenue.webp" alt="Markus Bayer, chef d'orchestre" title="Notre chef d'orchestre Markus Bayer">
+<section class="multimediatop">
 
+    <video src="videos/bienvenue.mp4" autoplay loop type="vidéo/mp4">
+        Votre navigateur ne supporte pas la balise vidé
+        o.
+    </video>
 </section>
 
 
@@ -99,36 +97,61 @@ CONDITIONS :
 
 <h1>Festival Harmonie des Sons</h1>
 
-<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quam, ad optio adipisci esse inventore, laudantium eos voluptates assumenda aperiam eum quod quis dignissimos vel harum? Vero dolore tempora harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis dolores odio vel veritatis. Quae et quod, sit dignissimos doloremque maxime inventore officia vitae nisi minima consequuntur, rerum quidem iste.</p>
-
+<div class="contentbienvenue">
+<p> Les ruelles pittoresques de notre ville résonneront bientôt des mélodies sublimes du Festival de Musique Classique. Sous la direction inspirée du chef d'orchestre Mark Ruben, un orchestre prestigieux livrera des interprétations magistrales de Vivaldi, Mozart et Beethoven.</p>
+<p>Pendant une semaine, le festival transportera les amateurs de musique à travers les époques, revisitant les chefs-d'œuvre du répertoire classique dans cinq villes différentes. Les concerts en plein air et les lieux historiques emblématiques offriront une expérience sensorielle unique.</p>
+<p>Les jeunes talents seront également mis à l'honneur, offrant des spectacles vibrants et émouvants. Des ateliers de découverte et des conférences enrichissantes permettront aux mélomanes d'approfondir leur connaissance et leur amour de la musique. Rejoignez-nous pour célébrer la grandeur de la musique classique et laissez-vous emporter par des symphonies majestueuses et des harmonies enchanteresses. Un rendez-vous à ne pas manquer pour tous les passionnés de musique et les curieux en quête de beauté et de sérénité.</p>
+</div>
 </section>
 
 
-<section class="programme">
+<section id="programme" class="programme">
 
-<h2>Programmation</h2>
-<p>13ème Edition</p>
-<p>Du 10 au 20 Juillet 2024</p>
+<div class ="titreProgramme">
+    <h2>Du 11 au 19 Juillet 2025</h2>
+    <p>13ème Edition</p>
+</div>
 
-<img src="images/1.jpeg" alt="Concert au Manoir de l'Avigneux le 11/07/2025" title="Concert au Manoir de l'Avigneux le 11/07/2025">
+<div class="concert">
+    <img src="images/1.jpeg" alt="Concert au Manoir de l'Avigneux le 11/07/2025" title="Concert au Manoir de l'Avigneux le 11/07/2025"><p>Concert au Manoir de l'Avigneux <br>Le 11/07/2025</p>
+</div>
+
+<div class="concert">
 <img src="images/2.jpeg" alt="Concert au Manoir de la Rouroux le 12/07/2025" title="Concert au Manoir de la Rouroux le 12/07/2025">
-<img src="images/3.jpeg" alt="Concert au Manoir de la Bougnane le 13/07/2025" title="Concert au Manoir de la Bougnane le 13/07/2025">
-<img src="images/4.jpeg" alt="Concert au Manoir de Colbeuge le 18/07/2025" title="Concert au Manoir de Colbeuge le 18/07/2025">
-<img src="images/5.webp" alt="Concert à la chapelle de la Martimont le 19/07/2025" title="Concert au Manoir de l'Avigneux le 10/07/2025">
+<p>Concert au Manoir de la Rouroux<br>Le 12/07/2025</p>
+</div>
 
-<p>Vous trouverez ci dessous le programme en format PDF.</p>
+
+<div class="concert">
+<img src="images/3.jpeg" alt="Concert au Manoir de la Bougnane le 13/07/2025" title="Concert au Manoir de la Bougnane le 13/07/2025">
+<p>Concert au Manoir de la Bougnane<br>Le 13/07/2025</p>
+</div>
+
+<div class="concert">
+<img src="images/4.jpeg" alt="Concert au Manoir de Colbeuge le 18/07/2025" title="Concert au Manoir de Colbeuge le 18/07/2025">
+<p>Concert au Manoir de Colbeuge<br>Le 18/07/2025</p>
+</div>
+
+<div class="concert">
+<img src="images/5.png" alt="Concert à la chapelle de la Martimont le 19/07/2025" title="Concert au Manoir de l'Avigneux le 10/07/2025">
+<p>Concert à la chapelle de la Martimont <br>Le 19/07/2025</p>
+</div>
+
+<p>Vous pouvez télécharger le programme en format PDF en cliquant ci-dessous : </p>
+<p><a href="programme.pdf" download="Programme.pdf"><input class="bouton" type="submit" value="Télécharger en PDF"></a></p>
+
 
 </section>
 
 
-<section class="infosPratiques">
+<section id="infosPratiques" class="infosPratiques">
 
 <h2>Informations Pratiques</h2>
 
 
-    <div class="contact">
+    <div class="adresse">
         <h4>Adresse</h4>
-            <p>84, chemin de Garnier <br>33916 Lenoirnec</p>
+        <p>84, chemin de Garnier <br>33916 Lenoirnec</p>
         <h4>Téléphone</h4>
         <a href="tel:+33782237810">07 82 23 78 10</a>
         <h4>Email</h4>
@@ -139,7 +162,7 @@ CONDITIONS :
 
     <div class="horaires">
     
-        <h2>Nos horaires</h2>
+        <h4 class ="titlehoraire">Nos horaires</h4>
     
         <table>
             <tr>
@@ -214,12 +237,24 @@ CONDITIONS :
   
 </section>
 
+
+<section id="galerie" class="galerie">
+    <h2>Galerie</h2>
+
+<img src="images/1.jpeg" alt="">
+<img src="images/2.jpeg" alt="">
+<img src="images/2.jpeg" alt="">
+<img src="images/2.jpeg" alt="">
+</section>
+
+
+
 </main>
 
 
 <footer>
     <p>
-    Copyright 2024 - <a href="#" target="_blank">Mentions Légales</a> - <a href="#" target="_blank">Politique de confidentialité</a> - 
+    Copyright 2024 - <a href="" target="_blank">Mentions Légales</a> - <a href="" target="_blank">Politique de confidentialité</a>
     </p>
     
     </footer>
