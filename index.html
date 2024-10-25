@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 
+
+PROMOUVOIR LE FESTIVAL DE MUSIQUE
+
+CONDITIONS : 
+
+- HEADER + NAV + MAIN + SECTION (+ARTICLE) + ASIDE + FOOTER
+
+
+- INSERER DES COMMENTAIRES (SECTION PRINCIPALE PRESENTANT LE FESTIVAL, ETC...)
+
+
+- CONTENU MULTIMEDIA : 
+    - VIDEO AVEC BALISE VIDEO : AVEC CONTROLS ET POSTER ET TEXTE ALTERNATIF
+    - AUDIO AVEC BALISE AUDIO : AVEC CONTROLS ET TEXTE ALTERNATIF + VOTRE NAVIGATEUR NE SUPPORTE PAS LA BALISE AUDIO EN TEXTE SI L'AUDIO N'APPARAIT PAS
+    - CARTE INTERACTIVE AVEC IFRAME : GOOGLE MAPS
+
+
+- FORMULAIRE
+    - NOM : CHAMP TEXTE
+    - EMAIL : CHAMP EMAIL
+    - SUJET : LISTE DEROULANTE
+    - MESSAGE : ZONE DE TEXTE
+    - BOUTON D'ENVOI 
+- STYLE DU FORMULAIRE
+    - BORDURES
+    - COULEURS
+    - ESPACEMENTS
+    - :FOCUS
+    - :HOVER
+
+
+
+- STYLES GENERAUX : 
+    - :link / :visited, :hover, :active
+    - ::BEFORE
+    - ::AFTER
+    - FEUILLE EXTERNE STYLE.CSS
+    - COHERENCE VISUELLE ; COULEURS , TYPOGRAPHIE, IMAGES, ETC...
+    - PAS DE FLEXBOX NI DE GRID
+    - UTILISER DISPLAY (BLOCK, INLINE, INLINE-BLOCK)
+    - MARGIN ET PADDING
+    - POSITION (RELATIVE, ABSOLUTE, ETC...)
+
+
+- ACCESIBILITE : 
+    - ALT SUR LES IMAGES ET VIDEOS ET AUDIO
+    - LABELS SUR LES FORMULAIRES
+    - COMPATIBILITE AVEC NAVIGATEURS (A CHERCHER SUR GOOGLE)
+
+
+- RENDU ATTENDU
+    - INDEX.HTML
+    - STYLES.CSS
+    - DOSSIER IMAGES
+    - DOSSIER VIDEOS 
+    - DOSSIER AUDIOS
+
+    -->
+
+<body>
+    
+<header>
+    <nav>
+        <ul>
+            <li>Acceuil</li>
+            <li>Programme</li>
+            <li>Infos Pratiques 
+                <ul>
+                    <li>Accès et Horaires</li>
+                    <li>Tarifs</li>
+                    <li>Accessibilité</li>
+                </ul>
+            <li>Galerie</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+
+<section class="XXXXX">
+    
+    <img src="images/bienvenue.webp" alt="Markus Bayer, chef d'orchestre" title="Notre chef d'orchestre Markus Bayer">
+
+</section>
+
+
+
+<section class="bienvenue">
+
+<h1>Festival Harmonie des Sons</h1>
+
+<p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quam, ad optio adipisci esse inventore, laudantium eos voluptates assumenda aperiam eum quod quis dignissimos vel harum? Vero dolore tempora harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam debitis dolores odio vel veritatis. Quae et quod, sit dignissimos doloremque maxime inventore officia vitae nisi minima consequuntur, rerum quidem iste.</p>
+
+</section>
+
+
+<section class="programme">
+
+<h2>Programmation</h2>
+<p>13ème Edition</p>
+<p>Du 10 au 20 Juillet 2024</p>
+
+<img src="images/1.jpeg" alt="Concert au Manoir de l'Avigneux le 11/07/2025" title="Concert au Manoir de l'Avigneux le 11/07/2025">
+<img src="images/2.jpeg" alt="Concert au Manoir de la Rouroux le 12/07/2025" title="Concert au Manoir de la Rouroux le 12/07/2025">
+<img src="images/3.jpeg" alt="Concert au Manoir de la Bougnane le 13/07/2025" title="Concert au Manoir de la Bougnane le 13/07/2025">
+<img src="images/4.jpeg" alt="Concert au Manoir de Colbeuge le 18/07/2025" title="Concert au Manoir de Colbeuge le 18/07/2025">
+<img src="images/5.webp" alt="Concert à la chapelle de la Martimont le 19/07/2025" title="Concert au Manoir de l'Avigneux le 10/07/2025">
+
+<p>Vous trouverez ci dessous le programme en format PDF.</p>
+
+</section>
+
+
+<section class="infosPratiques">
+
+<h2>Informations Pratiques</h2>
+
+
+    <div class="contact">
+        <h4>Adresse</h4>
+            <p>84, chemin de Garnier <br>33916 Lenoirnec</p>
+        <h4>Téléphone</h4>
+        <a href="tel:+33782237810">07 82 23 78 10</a>
+        <h4>Email</h4>
+        <a href="mailto:contact@lafermegourmande.com">contact@lafermegourmande.com</a></p>
+    </div>
+
+
+
+    <div class="horaires">
+    
+        <h2>Nos horaires</h2>
+    
+        <table>
+            <tr>
+                <td>Lundi - Vendredi</td>
+                <td>10:00 - 18:30</td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td>8:30 - 20:30</td>
+            </tr>
+            <tr>
+                <td>Dimanche</td>
+                <td>Fermé</td>
+            </tr>
+        </table>
+    
+    </div>
+
+    
+
+
+    <div class="formulaire">
+    
+    <form method="get" action="" >
+    
+        <ul>
+            <li> 
+                <label for="nom">Nom</label> 
+                <input class="reponse" type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </li>
+
+
+            <li> 
+                <label for="prenom">Prénom</label> 
+                <input class="reponse" type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+            </li>
+    
+    
+    
+            <li> 
+                <label for="email">Email</label> 
+                <input class="reponse" type="email" id="email" name="email" placeholder="Votre e-mail" required>
+            </li>
+        
+
+            <li>
+            <label for="sujet">Votre sujet</label>
+            <select name="sujet" id="sujet">
+              <option value="ddeinfos">Demande d'informations</option>
+              <option value="sav">Service après-vente</option>
+              <option value="reclamation">Réclamation</option>
+              <option value="partenariat">Partenariat</option>
+              <option value="autres">Autres</option>
+            </select>
+            </li>
+    
+
+           <li> 
+                <label>Votre message ici</label> <textarea class="reponse" name="message" placeholder="Ecrivez-nous"></textarea>
+            </li>
+    
+        
+            <li><input class="bouton" type="submit" value="Envoyer"></li>
+
+
+
+        </ul>
+    
+    </form>
+
+    
+  
+</section>
+
+</main>
+
+
+<footer>
+    
+</footer>
+
+</body>
+</html>
