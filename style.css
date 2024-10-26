@@ -3,7 +3,7 @@
 
 /* BODY */
 body{
-    background-color: #fff9e6;
+    background-color: #fff9e6 ;
     margin:0;
     padding: 0;
     text-align: center;
@@ -26,8 +26,7 @@ color: black;
 
 
 
-
-    /* HEADER INCLUANT LA NAV EN STICKY AVEC UN SOUS-MENU*/
+/* HEADER INCLUANT LA NAV EN STICKY AVEC UN SOUS-MENU*/
 
 
 /* HEADER : STICKY EN TOP=0 POUR RESTER EN STICKY 
@@ -122,7 +121,7 @@ header li{
     border-radius: 10px 50px 0px 90px;
     border:solid 2px #E0A458;
     box-shadow: 6px 6px 10px rgba(0,0,0,0.5);
-    scroll-margin-top: 80px;
+    scroll-margin-top: 150px;
 }
 
 
@@ -140,6 +139,12 @@ header li{
 .titreProgramme{
     font-size: 1.5rem;
 }
+
+
+.programme h2::before, .programme h2::after {
+    content: "🎶";
+  }
+  
 
 
 /* IMAGES ET INFORMATIONS DU PROGRAMME */
@@ -203,10 +208,10 @@ header li{
     margin: 50px;
     vertical-align: top;
     font-size: 1.2rem;
-    background-color: #FEFADC;
+    background-color: #fff9e6;
     border-radius: 10px 50px 0px 90px;
-    padding: 30px%;
-    border: #E0A458 solid 2px;
+    padding: 20px;
+    border: 2px solid #E0A458;
 }
 
 
@@ -215,7 +220,7 @@ header li{
     margin-top: 60px;
     padding-top: 60px;
     border-top: dotted;
-    border-color: #E0A458;
+    border-color: #e0a55888;
 }
 
 
@@ -246,8 +251,9 @@ header li{
 }
 
 #tarifs{
-    scroll-margin-top: 80px;
+    scroll-margin-top: 150px;
 }
+
 
 /* HORAIRES (TABLEAU) */
 
@@ -268,3 +274,142 @@ td, th {
 
 
 
+/* FORMULAIRE DE CONTACT */
+
+
+.contact h4{
+    font-size: 2.3rem;
+    margin-bottom: 0;
+}
+  
+.contact {
+    scroll-margin-top: 100px;
+  }
+
+
+/* ENSEMBLE DU FORMULAIRES */
+  .contact ul {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    list-style: none;
+  }
+  
+
+ 
+/* LIBELLE */
+  .contact label {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 10px;
+
+  }
+  
+/* REPONSES */
+  .reponse {
+    width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #E0A458;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: #ffffff ;
+  }
+
+  /* EFFET SUR LES REPONSES DU FORM EN FOCUS */
+  .reponse:focus {
+    background-color: #E0A458 ;
+    border-color:#E0A458;
+    outline: none;
+  }
+
+ 
+
+/* REPONSE DE TEXTE MIS EN AGRANDISSEMENT VERTICAL */
+  .contact textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+
+/* BOUTON ENVOYER - FOND + BORDURES ARRONDIES SANS CONTOUR + CHANGEMENT DE CURSEUR + AGRANDISSEMENT DE LA TAILLE POLICE + GRAS + OMBRE */
+  .bouton {
+    background-color: #E0A458;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    padding: 30px 80px;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.5);
+  }
+
+  /* EFFET EN FOCUS ET EN SURVOL SUR LE BOUTON */
+  .bouton:focus{
+    border: outset 5px #E0A458;
+    outline: none;
+  }
+
+  .bouton:hover{
+    border: outset 5px #E0A458;
+  }
+
+
+
+
+
+
+/* ARCHIVES */
+
+
+.archives{
+    scroll-margin-top: 60px;
+}
+
+
+.archives video{
+    height: 500px;
+}
+
+.archives audio{
+    width: 500px;
+}
+
+
+
+.archives h2{
+    font-size: 2.3rem;
+    border-top: dotted #e0a55888;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.archives h2::before, .archives h2::after {
+    content: "🎥 ";
+  }
+  
+
+.archives h3{
+    scroll-margin-top: 60px;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-top: 30px;
+    border-top: ridge #E0A458;
+}
+
+
+/* FOOTER */
+
+
+footer{
+    display: inline-block;
+    width: 100%;
+    background-color: #e0a5582a;
+    border-top: solid 0.5px #e0a5584b;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 7px;
+}
