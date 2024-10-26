@@ -75,14 +75,22 @@ CONDITIONS :
             <li><a href="index.html">Accueil</a></li>
             <li><a href="#programme">Programme</a></li>
             <li class="submenu1">Infos Pratiques
+                <ul class="submenu2">
+                  <li><a href="#infosPratiques">Adresse et Horaires</a></li>
+                  <li><a href="#access">Accessibilité</a></li>
+                  <li><a href="#tarifs">Tarifs</a></li>
+                  <li><a href="#contact">Nous contacter</a></li>
+                </ul>
+              </li>
+            
+              <li><a href="#archives">Archives</a>
+                <ul class="submenu2">
+                  <li><a href="#ed24">Année 2024</a></li>
+                  <li><a href="#ed23">Année 2023</a></li>
+                  <li><a href="#ed22">Année 2022</a></li>
+                </ul>
+              </li>
               
-              <ul class="submenu2">
-                <li><a href="#infosPratiques">Adresse et Horaires</a></li>
-                <li><a href="#access">Accessibilité</a></li>
-                <li><a href="#tarifs">Tarifs</a></li>
-              </ul>
-            </li>
-            <li><a href="#galerie">Galerie</a></li>
           </ul>
         </nav>
       </header>
@@ -115,37 +123,38 @@ CONDITIONS :
 <section id="programme" class="programme">
 
 <div class ="titreProgramme">
-    <h2>Du 11 au 19 Juillet 2025</h2>
+    <h2>Programmation</h2>
+    <h3>Du 11 au 19 Juillet 2025</h3>
     <p>13ème Edition</p>
 </div>
 
 <div class="concert">
-    <img src="images/1.jpeg" alt="Concert au Manoir de l'Avigneux le 11/07/2025" title="Concert au Manoir de l'Avigneux le 11/07/2025"><p>Concert au Manoir de l'Avigneux <br>Le 11/07/2025</p>
+    <img src="images/program/1.jpeg" alt="Concert au Manoir de l'Avigneux le 11/07/2025" title="Concert au Manoir de l'Avigneux le 11/07/2025"><p>Concert au Manoir de l'Avigneux <br>Le 11/07/2025</p>
 </div>
 
 <div class="concert">
-<img src="images/2.jpeg" alt="Concert au Manoir de la Rouroux le 12/07/2025" title="Concert au Manoir de la Rouroux le 12/07/2025">
+<img src="images/program/2.jpeg" alt="Concert au Manoir de la Rouroux le 12/07/2025" title="Concert au Manoir de la Rouroux le 12/07/2025">
 <p>Concert au Manoir de la Rouroux<br>Le 12/07/2025</p>
 </div>
 
 
 <div class="concert">
-<img src="images/3.jpeg" alt="Concert au Manoir de la Bougnane le 13/07/2025" title="Concert au Manoir de la Bougnane le 13/07/2025">
+<img src="images/program/3.jpeg" alt="Concert au Manoir de la Bougnane le 13/07/2025" title="Concert au Manoir de la Bougnane le 13/07/2025">
 <p>Concert au Manoir de la Bougnane<br>Le 13/07/2025</p>
 </div>
 
 <div class="concert">
-<img src="images/4.jpeg" alt="Concert au Manoir de Colbeuge le 18/07/2025" title="Concert au Manoir de Colbeuge le 18/07/2025">
+<img src="images/program/4.jpeg" alt="Concert au Manoir de Colbeuge le 18/07/2025" title="Concert au Manoir de Colbeuge le 18/07/2025">
 <p>Concert au Manoir de Colbeuge<br>Le 18/07/2025</p>
 </div>
 
 <div class="concert">
-<img src="images/5.png" alt="Concert à la chapelle de la Martimont le 19/07/2025" title="Concert au Manoir de l'Avigneux le 10/07/2025">
+<img src="images/program/5.png" alt="Concert à la chapelle de la Martimont le 19/07/2025" title="Concert au Manoir de l'Avigneux le 10/07/2025">
 <p>Concert à la chapelle de la Martimont <br>Le 19/07/2025</p>
 </div>
 
 <p>Vous pouvez télécharger le programme en format PDF en cliquant ci-dessous : </p>
-<a class="bouton" href="programme.pdf" download="Programme.pdf">Télécharger en PDF</a>
+<a class="bouton" href="programme.pdf" target="_blank" download="Programme.pdf">Télécharger en PDF</a>
 
 
 </section>
@@ -188,7 +197,12 @@ CONDITIONS :
     
     </div>
 
-    
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d263564.20077883336!2d-0.5825505678671762!3d44.83986776821982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1729974445773!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
 
     <div id="access">
 
@@ -226,7 +240,11 @@ CONDITIONS :
     
     </div>
 
-    <div class="formulaire">
+
+
+    <div id="contact" class="contact">
+
+        <h4>Nous contacter</h4>
     
     <form method="get" action="" >
     
@@ -252,7 +270,7 @@ CONDITIONS :
 
             <li>
             <label for="sujet">Votre sujet</label>
-            <select name="sujet" id="sujet">
+            <select class = "reponse" name="sujet" id="sujet">
               <option value="ddeinfos">Demande d'informations</option>
               <option value="sav">Service après-vente</option>
               <option value="reclamation">Réclamation</option>
@@ -280,14 +298,42 @@ CONDITIONS :
 </section>
 
 
-<section id="galerie" class="galerie">
-    <h2>Galerie</h2>
 
-<img src="images/1.jpeg" alt="">
-<img src="images/2.jpeg" alt="">
-<img src="images/2.jpeg" alt="">
-<img src="images/2.jpeg" alt="">
+
+
+
+<section id="archives" class="archives">
+    <h2>Archives</h2>
+
+    <h3 id="ed24">Harmonie des sons - 12ème édition - 2024</h3>    
+    
+    <div>
+        <p><video controls poster="images/apercus/ed24.jpg" ><source src="videos/ed24.mp4" type="video/mp4">Votre navigateur ne supporte pas la balise vidéo.</video></p>
+
+        <p><audio controls><source src="audio/ed24.mp3" type="audio/mpeg">Votre navigateur ne supporte pas la balise audio.</audio></p>
+    </div>
+
+
+    <h3 id="ed23">Harmonie des sons - 11ème édition - 2023</h3>    
+    
+    <div>
+        <p><video controls poster="images/apercus/ed23.jpg"><source src="videos/ed23.mp4" type="video/mp4">Votre navigateur ne supporte pas la balise vidéo.</video></p>
+
+        <p><audio controls><source src="audio/ed23.mp3" type="audio/mpeg">Votre navigateur ne supporte pas la balise audio.</audio></p>
+    </div>
+
+    <h3 id="ed22">Harmonie des sons - 10ème édition - 2022</h3>    
+    
+    <div>
+        <p><video controls poster="images/apercus/ed22.jpg"><source src="videos/ed22.mp4" type="video/mp4">Votre navigateur ne supporte pas la balise vidéo.</video></p>
+
+        <p><audio controls><source src="audio/ed22.mp3" type="audio/mpeg">Votre navigateur ne supporte pas la balise audio.</audio></p>
+    </div>
+
+
 </section>
+
+
 
 
 
