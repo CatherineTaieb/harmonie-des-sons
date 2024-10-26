@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,23 +69,30 @@ CONDITIONS :
 
 <body>
     
-<header>
-    <nav>
-        <ul>
+    <header>
+        <nav>
+          <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="#programme">Programme</a></li>
-            <li><a href="#infosPratiques">Infos Pratiques</a></li>
+            <li class="submenu1">Infos Pratiques
+              
+              <ul class="submenu2">
+                <li><a href="#infosPratiques">Adresse et Horaires</a></li>
+                <li><a href="#access">Accessibilité</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+              </ul>
+            </li>
             <li><a href="#galerie">Galerie</a></li>
-        </ul>
-    </nav>
-</header>
+          </ul>
+        </nav>
+      </header>
 
 <main>
 
 
 <section class="multimediatop">
 
-    <video src="videos/bienvenue.mp4" autoplay loop type="vidéo/mp4">
+    <video src="videos/bienvenue.mp4" autoplay loop>
         Votre navigateur ne supporte pas la balise vidé
         o.
     </video>
@@ -138,7 +145,7 @@ CONDITIONS :
 </div>
 
 <p>Vous pouvez télécharger le programme en format PDF en cliquant ci-dessous : </p>
-<p><a href="programme.pdf" download="Programme.pdf"><input class="bouton" type="submit" value="Télécharger en PDF"></a></p>
+<a class="bouton" href="programme.pdf" download="Programme.pdf">Télécharger en PDF</a>
 
 
 </section>
@@ -155,7 +162,7 @@ CONDITIONS :
         <h4>Téléphone</h4>
         <a href="tel:+33782237810">07 82 23 78 10</a>
         <h4>Email</h4>
-        <a href="mailto:contact@lafermegourmande.com">contact@lafermegourmande.com</a></p>
+        <a href="mailto:contact@lafermegourmande.com">contact@lafermegourmande.com</a>
     </div>
 
 
@@ -183,6 +190,41 @@ CONDITIONS :
 
     
 
+    <div id="access">
+
+        <h3>Accessibilité</h3>
+
+        <p>L'accessibilité est une priorité essentielle pour notre Festival. Nous nous engageons à offrir une expérience agréable et inclusive pour tous les festivaliers. Les lieux de concert sont entièrement accessibles, avec des rampes d'accès et des ascenseurs pour les personnes à mobilité réduite. Des places de parking réservées sont disponibles à proximité de chaque site.</p>
+
+        <p>Des dispositifs d'aide à l'audition sont également mis à disposition pour les malentendants, permettant à chacun de profiter pleinement des performances musicales. Nous offrons des programmes en braille et en gros caractères pour les malvoyants, garantissant ainsi une accessibilité optimale à l'information.</p>
+        
+        <p>Notre équipe de bénévoles est formée pour assister et accompagner les personnes en situation de handicap tout au long de leur visite. Des espaces de repos adaptés et des services d'accompagnement personnalisés sont également prévus pour assurer le confort de tous les participants.        
+        Nous croyons fermement que la musique classique est un art universel, et nous nous efforçons de créer un environnement où chacun peut apprécier la magie des concerts dans les meilleures conditions possibles. </p>
+
+    </div>
+
+
+
+    <div id="tarifs" class="tarifs">
+    
+        <h4 class ="titletarifs">Nos tarifs</h4>
+    
+        <table>
+            <tr>
+                <td>Adultes</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+                <td>Etudiants et Séniors (65 ans et plus)</td>
+                <td>35€</td>
+            </tr>
+            <tr>
+                <td>Enfant (Moins de 12 ans)</td>
+                <td>20€</td>
+            </tr>
+        </table>
+    
+    </div>
 
     <div class="formulaire">
     
@@ -233,7 +275,7 @@ CONDITIONS :
     
     </form>
 
-    
+    </div>
   
 </section>
 
